@@ -1,0 +1,9 @@
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\KisiselYapilacaklarApp.exe.config
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\KisiselYapilacaklarApp.exe
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\KisiselYapilacaklarApp.pdb
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Properties.Resources.resources
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmMain.resources
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.GenerateResource.cache
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.CoreCompileInputs.cache
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.exe
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.pdb
