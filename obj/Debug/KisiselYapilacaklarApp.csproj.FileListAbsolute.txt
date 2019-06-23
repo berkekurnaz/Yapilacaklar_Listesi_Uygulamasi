@@ -7,3 +7,14 @@ D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.CoreCompileInputs.cache
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.exe
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.pdb
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\EntityFramework.dll
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.dll
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.EF6.dll
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.Linq.dll
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\EntityFramework.xml
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.xml
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.dll.config
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.CopyComplete
