@@ -31,22 +31,22 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.günlükYapılacaklarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hepsiniListeleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakGunlukEkle = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakGunlukListele = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakGunlukHepsiniListele = new System.Windows.Forms.ToolStripMenuItem();
             this.haftalıkYapılacaklarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniEkleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hepsiniListeleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakHaftalikEkle = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakHaftalikListele = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakHaftalikHepsiniListele = new System.Windows.Forms.ToolStripMenuItem();
             this.aylıkYapılacaklarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniEkleToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeleToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.hepsiniListeleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakAylikEkle = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakAylikListele = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripYapilacakAylikHepsiniListele = new System.Windows.Forms.ToolStripMenuItem();
             this.notlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniEkleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.çıkışYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripNotEkle = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripNotListele = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripAyarlar = new System.Windows.Forms.ToolStripMenuItem();
+            this.stripCikisYap = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,8 +91,8 @@
             this.haftalıkYapılacaklarToolStripMenuItem,
             this.aylıkYapılacaklarToolStripMenuItem,
             this.notlarToolStripMenuItem,
-            this.ayarlarToolStripMenuItem,
-            this.çıkışYapToolStripMenuItem});
+            this.stripAyarlar,
+            this.stripCikisYap});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(905, 28);
@@ -108,119 +108,132 @@
             // günlükYapılacaklarToolStripMenuItem
             // 
             this.günlükYapılacaklarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniEkleToolStripMenuItem,
-            this.listeleToolStripMenuItem,
-            this.hepsiniListeleToolStripMenuItem});
+            this.stripYapilacakGunlukEkle,
+            this.stripYapilacakGunlukListele,
+            this.stripYapilacakGunlukHepsiniListele});
             this.günlükYapılacaklarToolStripMenuItem.Name = "günlükYapılacaklarToolStripMenuItem";
             this.günlükYapılacaklarToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.günlükYapılacaklarToolStripMenuItem.Text = "Günlük Yapılacaklar";
             // 
-            // yeniEkleToolStripMenuItem
+            // stripYapilacakGunlukEkle
             // 
-            this.yeniEkleToolStripMenuItem.Name = "yeniEkleToolStripMenuItem";
-            this.yeniEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.yeniEkleToolStripMenuItem.Text = "Yeni Ekle";
+            this.stripYapilacakGunlukEkle.Name = "stripYapilacakGunlukEkle";
+            this.stripYapilacakGunlukEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukEkle.Text = "Yeni Ekle";
+            this.stripYapilacakGunlukEkle.Click += new System.EventHandler(this.stripYapilacakGunlukEkle_Click);
             // 
-            // listeleToolStripMenuItem
+            // stripYapilacakGunlukListele
             // 
-            this.listeleToolStripMenuItem.Name = "listeleToolStripMenuItem";
-            this.listeleToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.listeleToolStripMenuItem.Text = "Listele";
+            this.stripYapilacakGunlukListele.Name = "stripYapilacakGunlukListele";
+            this.stripYapilacakGunlukListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukListele.Text = "Listele";
+            this.stripYapilacakGunlukListele.Click += new System.EventHandler(this.stripYapilacakGunlukListele_Click);
             // 
-            // hepsiniListeleToolStripMenuItem
+            // stripYapilacakGunlukHepsiniListele
             // 
-            this.hepsiniListeleToolStripMenuItem.Name = "hepsiniListeleToolStripMenuItem";
-            this.hepsiniListeleToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.hepsiniListeleToolStripMenuItem.Text = "Hepsini Listele";
+            this.stripYapilacakGunlukHepsiniListele.Name = "stripYapilacakGunlukHepsiniListele";
+            this.stripYapilacakGunlukHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukHepsiniListele.Text = "Hepsini Listele";
+            this.stripYapilacakGunlukHepsiniListele.Click += new System.EventHandler(this.stripYapilacakGunlukHepsiniListele_Click);
             // 
             // haftalıkYapılacaklarToolStripMenuItem
             // 
             this.haftalıkYapılacaklarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniEkleToolStripMenuItem1,
-            this.listeleToolStripMenuItem1,
-            this.hepsiniListeleToolStripMenuItem1});
+            this.stripYapilacakHaftalikEkle,
+            this.stripYapilacakHaftalikListele,
+            this.stripYapilacakHaftalikHepsiniListele});
             this.haftalıkYapılacaklarToolStripMenuItem.Name = "haftalıkYapılacaklarToolStripMenuItem";
             this.haftalıkYapılacaklarToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
             this.haftalıkYapılacaklarToolStripMenuItem.Text = "Haftalık Yapılacaklar";
             // 
-            // yeniEkleToolStripMenuItem1
+            // stripYapilacakHaftalikEkle
             // 
-            this.yeniEkleToolStripMenuItem1.Name = "yeniEkleToolStripMenuItem1";
-            this.yeniEkleToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
-            this.yeniEkleToolStripMenuItem1.Text = "Yeni Ekle";
+            this.stripYapilacakHaftalikEkle.Name = "stripYapilacakHaftalikEkle";
+            this.stripYapilacakHaftalikEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikEkle.Text = "Yeni Ekle";
+            this.stripYapilacakHaftalikEkle.Click += new System.EventHandler(this.stripYapilacakHaftalikEkle_Click);
             // 
-            // listeleToolStripMenuItem1
+            // stripYapilacakHaftalikListele
             // 
-            this.listeleToolStripMenuItem1.Name = "listeleToolStripMenuItem1";
-            this.listeleToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
-            this.listeleToolStripMenuItem1.Text = "Listele";
+            this.stripYapilacakHaftalikListele.Name = "stripYapilacakHaftalikListele";
+            this.stripYapilacakHaftalikListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikListele.Text = "Listele";
+            this.stripYapilacakHaftalikListele.Click += new System.EventHandler(this.stripYapilacakHaftalikListele_Click);
             // 
-            // hepsiniListeleToolStripMenuItem1
+            // stripYapilacakHaftalikHepsiniListele
             // 
-            this.hepsiniListeleToolStripMenuItem1.Name = "hepsiniListeleToolStripMenuItem1";
-            this.hepsiniListeleToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
-            this.hepsiniListeleToolStripMenuItem1.Text = "Hepsini Listele";
+            this.stripYapilacakHaftalikHepsiniListele.Name = "stripYapilacakHaftalikHepsiniListele";
+            this.stripYapilacakHaftalikHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikHepsiniListele.Text = "Hepsini Listele";
+            this.stripYapilacakHaftalikHepsiniListele.Click += new System.EventHandler(this.stripYapilacakHaftalikHepsiniListele_Click);
             // 
             // aylıkYapılacaklarToolStripMenuItem
             // 
             this.aylıkYapılacaklarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniEkleToolStripMenuItem3,
-            this.listeleToolStripMenuItem3,
-            this.hepsiniListeleToolStripMenuItem2});
+            this.stripYapilacakAylikEkle,
+            this.stripYapilacakAylikListele,
+            this.stripYapilacakAylikHepsiniListele});
             this.aylıkYapılacaklarToolStripMenuItem.Name = "aylıkYapılacaklarToolStripMenuItem";
             this.aylıkYapılacaklarToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.aylıkYapılacaklarToolStripMenuItem.Text = "Aylık Yapılacaklar";
             // 
-            // yeniEkleToolStripMenuItem3
+            // stripYapilacakAylikEkle
             // 
-            this.yeniEkleToolStripMenuItem3.Name = "yeniEkleToolStripMenuItem3";
-            this.yeniEkleToolStripMenuItem3.Size = new System.Drawing.Size(180, 26);
-            this.yeniEkleToolStripMenuItem3.Text = "Yeni Ekle";
+            this.stripYapilacakAylikEkle.Name = "stripYapilacakAylikEkle";
+            this.stripYapilacakAylikEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikEkle.Text = "Yeni Ekle";
+            this.stripYapilacakAylikEkle.Click += new System.EventHandler(this.stripYapilacakAylikEkle_Click);
             // 
-            // listeleToolStripMenuItem3
+            // stripYapilacakAylikListele
             // 
-            this.listeleToolStripMenuItem3.Name = "listeleToolStripMenuItem3";
-            this.listeleToolStripMenuItem3.Size = new System.Drawing.Size(180, 26);
-            this.listeleToolStripMenuItem3.Text = "Listele";
+            this.stripYapilacakAylikListele.Name = "stripYapilacakAylikListele";
+            this.stripYapilacakAylikListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikListele.Text = "Listele";
+            this.stripYapilacakAylikListele.Click += new System.EventHandler(this.stripYapilacakAylikListele_Click);
             // 
-            // hepsiniListeleToolStripMenuItem2
+            // stripYapilacakAylikHepsiniListele
             // 
-            this.hepsiniListeleToolStripMenuItem2.Name = "hepsiniListeleToolStripMenuItem2";
-            this.hepsiniListeleToolStripMenuItem2.Size = new System.Drawing.Size(180, 26);
-            this.hepsiniListeleToolStripMenuItem2.Text = "Hepsini Listele";
+            this.stripYapilacakAylikHepsiniListele.Name = "stripYapilacakAylikHepsiniListele";
+            this.stripYapilacakAylikHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikHepsiniListele.Text = "Hepsini Listele";
+            this.stripYapilacakAylikHepsiniListele.Click += new System.EventHandler(this.stripYapilacakAylikHepsiniListele_Click);
             // 
             // notlarToolStripMenuItem
             // 
             this.notlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniEkleToolStripMenuItem2,
-            this.listeleToolStripMenuItem2});
+            this.stripNotEkle,
+            this.stripNotListele});
             this.notlarToolStripMenuItem.Name = "notlarToolStripMenuItem";
             this.notlarToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.notlarToolStripMenuItem.Text = "Notlar";
             // 
-            // yeniEkleToolStripMenuItem2
+            // stripNotEkle
             // 
-            this.yeniEkleToolStripMenuItem2.Name = "yeniEkleToolStripMenuItem2";
-            this.yeniEkleToolStripMenuItem2.Size = new System.Drawing.Size(142, 26);
-            this.yeniEkleToolStripMenuItem2.Text = "Yeni Ekle";
+            this.stripNotEkle.Name = "stripNotEkle";
+            this.stripNotEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripNotEkle.Text = "Yeni Ekle";
+            this.stripNotEkle.Click += new System.EventHandler(this.stripNotEkle_Click);
             // 
-            // listeleToolStripMenuItem2
+            // stripNotListele
             // 
-            this.listeleToolStripMenuItem2.Name = "listeleToolStripMenuItem2";
-            this.listeleToolStripMenuItem2.Size = new System.Drawing.Size(142, 26);
-            this.listeleToolStripMenuItem2.Text = "Listele";
+            this.stripNotListele.Name = "stripNotListele";
+            this.stripNotListele.Size = new System.Drawing.Size(216, 26);
+            this.stripNotListele.Text = "Listele";
+            this.stripNotListele.Click += new System.EventHandler(this.stripNotListele_Click);
             // 
-            // ayarlarToolStripMenuItem
+            // stripAyarlar
             // 
-            this.ayarlarToolStripMenuItem.Name = "ayarlarToolStripMenuItem";
-            this.ayarlarToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
-            this.ayarlarToolStripMenuItem.Text = "Ayarlar";
+            this.stripAyarlar.Name = "stripAyarlar";
+            this.stripAyarlar.Size = new System.Drawing.Size(68, 24);
+            this.stripAyarlar.Text = "Ayarlar";
+            this.stripAyarlar.Click += new System.EventHandler(this.stripAyarlar_Click);
             // 
-            // çıkışYapToolStripMenuItem
+            // stripCikisYap
             // 
-            this.çıkışYapToolStripMenuItem.Name = "çıkışYapToolStripMenuItem";
-            this.çıkışYapToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
-            this.çıkışYapToolStripMenuItem.Text = "Çıkış Yap";
+            this.stripCikisYap.Name = "stripCikisYap";
+            this.stripCikisYap.Size = new System.Drawing.Size(79, 24);
+            this.stripCikisYap.Text = "Çıkış Yap";
+            this.stripCikisYap.Click += new System.EventHandler(this.stripCikisYap_Click);
             // 
             // panel1
             // 
@@ -464,16 +477,16 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem günlükYapılacaklarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yeniEkleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakGunlukEkle;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakGunlukListele;
         private System.Windows.Forms.ToolStripMenuItem haftalıkYapılacaklarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yeniEkleToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakHaftalikEkle;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakHaftalikListele;
         private System.Windows.Forms.ToolStripMenuItem notlarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yeniEkleToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem ayarlarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem çıkışYapToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stripNotEkle;
+        private System.Windows.Forms.ToolStripMenuItem stripNotListele;
+        private System.Windows.Forms.ToolStripMenuItem stripAyarlar;
+        private System.Windows.Forms.ToolStripMenuItem stripCikisYap;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -495,11 +508,11 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ToolStripMenuItem hepsiniListeleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hepsiniListeleToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakGunlukHepsiniListele;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakHaftalikHepsiniListele;
         private System.Windows.Forms.ToolStripMenuItem aylıkYapılacaklarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem yeniEkleToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem listeleToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem hepsiniListeleToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikEkle;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikListele;
+        private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikHepsiniListele;
     }
 }

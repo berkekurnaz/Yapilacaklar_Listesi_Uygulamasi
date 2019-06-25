@@ -67,7 +67,13 @@
     <Compile Include="BusinessLayer\Abstract\INoteManager.cs" />
     <Compile Include="BusinessLayer\Concrete\NoteManager.cs" />
     <Compile Include="DataAccessLayer\Abstract\INoteDal.cs" />
+    <Compile Include="DataAccessLayer\Abstract\IToDoListMonthDal.cs" />
+    <Compile Include="DataAccessLayer\Abstract\IToDoListTodayDal.cs" />
+    <Compile Include="DataAccessLayer\Abstract\IToDoListWeekDal.cs" />
+    <Compile Include="DataAccessLayer\Concrete\ToDoListMonthDal.cs" />
+    <Compile Include="DataAccessLayer\Concrete\ToDoListWeekDal.cs" />
     <Compile Include="DataAccessLayer\Concrete\NoteDal.cs" />
+    <Compile Include="DataAccessLayer\Concrete\ToDoListTodayDal.cs" />
     <Compile Include="EntityLayer\Abstract\IEntity.cs" />
     <Compile Include="EntityLayer\Concrete\Note.cs" />
     <Compile Include="EntityLayer\Concrete\ToDoListMonth.cs" />
@@ -81,6 +87,30 @@
     <Compile Include="Screens\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\FrmNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmNote.Designer.cs">
+      <DependentUpon>FrmNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FrmToDoMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmToDoMonth.Designer.cs">
+      <DependentUpon>FrmToDoMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FrmToDoToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmToDoToday.Designer.cs">
+      <DependentUpon>FrmToDoToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\FrmToDoWeek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmToDoWeek.Designer.cs">
+      <DependentUpon>FrmToDoWeek.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,6 +122,18 @@
     </Compile>
     <EmbeddedResource Include="Screens\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmNote.resx">
+      <DependentUpon>FrmNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmToDoMonth.resx">
+      <DependentUpon>FrmToDoMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmToDoToday.resx">
+      <DependentUpon>FrmToDoToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmToDoWeek.resx">
+      <DependentUpon>FrmToDoWeek.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
