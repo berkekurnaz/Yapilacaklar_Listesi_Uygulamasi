@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSQLiteConnection.cs" />
     <Compile Include="BusinessLayer\Abstract\INoteManager.cs" />
     <Compile Include="BusinessLayer\Concrete\NoteManager.cs" />
     <Compile Include="DataAccessLayer\Abstract\INoteDal.cs" />

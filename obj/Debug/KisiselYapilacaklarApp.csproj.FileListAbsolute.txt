@@ -16,5 +16,4 @@ D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\EntityFramework.SqlServer.xml
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.xml
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.dll.config
-D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csprojAssemblyReference.cache
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.CopyComplete

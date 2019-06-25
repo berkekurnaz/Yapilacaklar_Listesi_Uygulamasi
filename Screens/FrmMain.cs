@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KisiselYapilacaklarApp.DataAccessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace KisiselYapilacaklarApp.Screens
         public FrmMain()
         {
             InitializeComponent();
+        }
+
+        NoteDal noteDal = new NoteDal();
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
