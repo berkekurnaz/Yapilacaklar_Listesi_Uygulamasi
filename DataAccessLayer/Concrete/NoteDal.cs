@@ -57,7 +57,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
         }
 
         public void Add(Note note)
-        {
+        { 
             string query = "Insert Into Note (Title,Content,CreatedDate,Status) Values (@p1,@p2,@p3,@p4)";
             SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
             command.Parameters.AddWithValue("@p1", note.Title);
