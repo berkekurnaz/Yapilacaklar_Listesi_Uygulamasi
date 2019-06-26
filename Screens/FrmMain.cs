@@ -41,7 +41,8 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripNotEkle_Click(object sender, EventArgs e)
         {
-
+            FrmNoteAdd frmNoteAdd = new FrmNoteAdd();
+            frmNoteAdd.Show();
         }
 
         private void stripNotListele_Click(object sender, EventArgs e)

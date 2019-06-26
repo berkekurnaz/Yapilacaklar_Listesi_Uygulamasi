@@ -22,3 +22,4 @@ D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoMonth.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoToday.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoWeek.resources
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmNoteAdd.resources
