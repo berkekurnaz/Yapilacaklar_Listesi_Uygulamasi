@@ -13,6 +13,8 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Abstract
         ToDoListToday GetById(int Id);
         void Add(ToDoListToday toDoListToday);
         void Update(int Id, ToDoListToday toDoListToday);
+        void UpdateOnlyMainSections(int Id, ToDoListToday toDoListToday);
+        void UpdateCompletedStatus(int Id, string completedStatus);
         void Delete(int Id);
     }
 }
