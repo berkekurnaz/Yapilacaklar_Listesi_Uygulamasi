@@ -42,7 +42,8 @@ namespace KisiselYapilacaklarApp.Screens
         {
             if (toDoType == "Ozel")
             {
-                dataGridView1.DataSource = toDoListWeekManager.GetAll().Where(x => x.Week == 27).ToList();
+                int currentWeek = DateTime.Now.DayOfYear / 7;
+                dataGridView1.DataSource = toDoListWeekManager.GetAll().Where(x => x.Week == currentWeek).ToList();
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[3].Visible = false;

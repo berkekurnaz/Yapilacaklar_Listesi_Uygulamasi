@@ -42,7 +42,8 @@ namespace KisiselYapilacaklarApp.Screens
         {
             if (toDoType == "Ozel")
             {
-                dataGridView1.DataSource = toDoListTodayManager.GetAll().Where(x => x.Day == 27).ToList();
+                int currentDay = DateTime.Now.Day;
+                dataGridView1.DataSource = toDoListTodayManager.GetAll().Where(x => x.Day == currentDay).ToList();
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[3].Visible = false;

@@ -42,7 +42,8 @@ namespace KisiselYapilacaklarApp.Screens
         {
             if (toDoType == "Ozel")
             {
-                dataGridView1.DataSource = toDoListMonthManager.GetAll().Where(x => x.Month == 6).ToList();
+                int currentMonth = DateTime.Now.Month;
+                dataGridView1.DataSource = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth).ToList();
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[3].Visible = false;
