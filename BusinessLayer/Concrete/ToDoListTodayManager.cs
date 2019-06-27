@@ -59,6 +59,36 @@ namespace KisiselYapilacaklarApp.BusinessLayer.Concrete
             }
         }
 
+        public void UpdateCompletedStatus(int Id, string completedStatus)
+        {
+            try
+            {
+                if (completedStatus.Length > 2)
+                {
+                    toDoListTodayDal.UpdateCompletedStatus(Id, completedStatus);
+                }
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+        }
+
+        public void UpdateOnlyMainSections(int Id, ToDoListToday toDoListToday)
+        {
+            try
+            {
+                if (toDoListToday.Title.Length > 2)
+                {
+                    toDoListTodayDal.UpdateOnlyMainSections(Id, toDoListToday);
+                }
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+        }
+
         public void Delete(int Id)
         {
             try

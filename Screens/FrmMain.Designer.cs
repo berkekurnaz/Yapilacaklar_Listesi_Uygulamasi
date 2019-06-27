@@ -60,25 +60,22 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,21 +115,21 @@
             // stripYapilacakGunlukEkle
             // 
             this.stripYapilacakGunlukEkle.Name = "stripYapilacakGunlukEkle";
-            this.stripYapilacakGunlukEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukEkle.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakGunlukEkle.Text = "Yeni Ekle";
             this.stripYapilacakGunlukEkle.Click += new System.EventHandler(this.stripYapilacakGunlukEkle_Click);
             // 
             // stripYapilacakGunlukListele
             // 
             this.stripYapilacakGunlukListele.Name = "stripYapilacakGunlukListele";
-            this.stripYapilacakGunlukListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakGunlukListele.Text = "Listele";
             this.stripYapilacakGunlukListele.Click += new System.EventHandler(this.stripYapilacakGunlukListele_Click);
             // 
             // stripYapilacakGunlukHepsiniListele
             // 
             this.stripYapilacakGunlukHepsiniListele.Name = "stripYapilacakGunlukHepsiniListele";
-            this.stripYapilacakGunlukHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakGunlukHepsiniListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakGunlukHepsiniListele.Text = "Hepsini Listele";
             this.stripYapilacakGunlukHepsiniListele.Click += new System.EventHandler(this.stripYapilacakGunlukHepsiniListele_Click);
             // 
@@ -149,21 +146,21 @@
             // stripYapilacakHaftalikEkle
             // 
             this.stripYapilacakHaftalikEkle.Name = "stripYapilacakHaftalikEkle";
-            this.stripYapilacakHaftalikEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikEkle.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakHaftalikEkle.Text = "Yeni Ekle";
             this.stripYapilacakHaftalikEkle.Click += new System.EventHandler(this.stripYapilacakHaftalikEkle_Click);
             // 
             // stripYapilacakHaftalikListele
             // 
             this.stripYapilacakHaftalikListele.Name = "stripYapilacakHaftalikListele";
-            this.stripYapilacakHaftalikListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakHaftalikListele.Text = "Listele";
             this.stripYapilacakHaftalikListele.Click += new System.EventHandler(this.stripYapilacakHaftalikListele_Click);
             // 
             // stripYapilacakHaftalikHepsiniListele
             // 
             this.stripYapilacakHaftalikHepsiniListele.Name = "stripYapilacakHaftalikHepsiniListele";
-            this.stripYapilacakHaftalikHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakHaftalikHepsiniListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakHaftalikHepsiniListele.Text = "Hepsini Listele";
             this.stripYapilacakHaftalikHepsiniListele.Click += new System.EventHandler(this.stripYapilacakHaftalikHepsiniListele_Click);
             // 
@@ -180,21 +177,21 @@
             // stripYapilacakAylikEkle
             // 
             this.stripYapilacakAylikEkle.Name = "stripYapilacakAylikEkle";
-            this.stripYapilacakAylikEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikEkle.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakAylikEkle.Text = "Yeni Ekle";
             this.stripYapilacakAylikEkle.Click += new System.EventHandler(this.stripYapilacakAylikEkle_Click);
             // 
             // stripYapilacakAylikListele
             // 
             this.stripYapilacakAylikListele.Name = "stripYapilacakAylikListele";
-            this.stripYapilacakAylikListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakAylikListele.Text = "Listele";
             this.stripYapilacakAylikListele.Click += new System.EventHandler(this.stripYapilacakAylikListele_Click);
             // 
             // stripYapilacakAylikHepsiniListele
             // 
             this.stripYapilacakAylikHepsiniListele.Name = "stripYapilacakAylikHepsiniListele";
-            this.stripYapilacakAylikHepsiniListele.Size = new System.Drawing.Size(216, 26);
+            this.stripYapilacakAylikHepsiniListele.Size = new System.Drawing.Size(180, 26);
             this.stripYapilacakAylikHepsiniListele.Text = "Hepsini Listele";
             this.stripYapilacakAylikHepsiniListele.Click += new System.EventHandler(this.stripYapilacakAylikHepsiniListele_Click);
             // 
@@ -210,14 +207,14 @@
             // stripNotEkle
             // 
             this.stripNotEkle.Name = "stripNotEkle";
-            this.stripNotEkle.Size = new System.Drawing.Size(216, 26);
+            this.stripNotEkle.Size = new System.Drawing.Size(142, 26);
             this.stripNotEkle.Text = "Yeni Ekle";
             this.stripNotEkle.Click += new System.EventHandler(this.stripNotEkle_Click);
             // 
             // stripNotListele
             // 
             this.stripNotListele.Name = "stripNotListele";
-            this.stripNotListele.Size = new System.Drawing.Size(216, 26);
+            this.stripNotListele.Size = new System.Drawing.Size(142, 26);
             this.stripNotListele.Text = "Listele";
             this.stripNotListele.Click += new System.EventHandler(this.stripNotListele_Click);
             // 
@@ -349,7 +346,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Location = new System.Drawing.Point(12, 178);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(284, 329);
@@ -357,18 +354,9 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bugün Yapılacaklar";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 21);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(271, 302);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
+            this.groupBox2.Controls.Add(this.listBox2);
             this.groupBox2.Location = new System.Drawing.Point(304, 178);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(284, 329);
@@ -376,33 +364,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bu Hafta Yapılacaklar";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(7, 21);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(271, 302);
-            this.dataGridView2.TabIndex = 0;
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView3);
+            this.groupBox3.Controls.Add(this.listBox3);
             this.groupBox3.Location = new System.Drawing.Point(600, 178);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(284, 329);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Bu Ay Yapılacaklar";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(7, 21);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(271, 302);
-            this.dataGridView3.TabIndex = 0;
             // 
             // panel5
             // 
@@ -431,6 +401,33 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Tarih";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(7, 30);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(271, 292);
+            this.listBox1.TabIndex = 0;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(7, 30);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(271, 292);
+            this.listBox2.TabIndex = 1;
+            // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 16;
+            this.listBox3.Location = new System.Drawing.Point(9, 30);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(271, 292);
+            this.listBox3.TabIndex = 2;
             // 
             // FrmMain
             // 
@@ -461,11 +458,8 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -500,11 +494,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -514,5 +505,8 @@
         private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikEkle;
         private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikListele;
         private System.Windows.Forms.ToolStripMenuItem stripYapilacakAylikHepsiniListele;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox3;
     }
 }

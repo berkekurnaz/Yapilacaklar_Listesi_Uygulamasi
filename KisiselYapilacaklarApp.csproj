@@ -105,6 +105,12 @@
     <Compile Include="Screens\FrmNoteAdd.Designer.cs">
       <DependentUpon>FrmNoteAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\FrmToDoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmToDoAdd.Designer.cs">
+      <DependentUpon>FrmToDoAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\FrmToDoMonth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\FrmNoteAdd.resx">
       <DependentUpon>FrmNoteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmToDoAdd.resx">
+      <DependentUpon>FrmToDoAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\FrmToDoMonth.resx">
       <DependentUpon>FrmToDoMonth.cs</DependentUpon>

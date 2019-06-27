@@ -83,9 +83,42 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
             command.Parameters.AddWithValue("@p4", toDoListToday.Month);
             command.Parameters.AddWithValue("@p5", toDoListToday.Year);
             command.Parameters.AddWithValue("@p6", toDoListToday.Completed);
-            command.Parameters.AddWithValue("@p7", toDoListToday.Id);
+            command.Parameters.AddWithValue("@p7", Id);
             command.ExecuteNonQuery();
             connection.Connection().Close();
+        }
+
+        public void UpdateOnlyMainSections(int Id, ToDoListToday toDoListToday)
+        {
+            string query = "Update ToDoListToday set Title=@p1, Completed=@p2 where Id=@p3";
+            SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+            command.Parameters.AddWithValue("@p1", toDoListToday.Title);
+            command.Parameters.AddWithValue("@p2", toDoListToday.Completed);
+            command.Parameters.AddWithValue("@p3", Id);
+            command.ExecuteNonQuery();
+            connection.Connection().Close();
+        }
+
+        public void UpdateCompletedStatus(int Id, string completedStatus)
+        {
+            if (completedStatus == "Tamamlandı")
+            {
+                string query = "Update ToDoListToday set Completed=@p1 where Id=@p2";
+                SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+                command.Parameters.AddWithValue("@p1", "Tamamlanmadı");
+                command.Parameters.AddWithValue("@p2", Id);
+                command.ExecuteNonQuery();
+                connection.Connection().Close();
+            }
+            else
+            {
+                string query = "Update ToDoListToday set Completed=@p1 where Id=@p2";
+                SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+                command.Parameters.AddWithValue("@p1", "Tamamlandı");
+                command.Parameters.AddWithValue("@p2", Id);
+                command.ExecuteNonQuery();
+                connection.Connection().Close();
+            }
         }
 
         public void Delete(int Id)

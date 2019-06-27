@@ -1,4 +1,6 @@
-﻿using KisiselYapilacaklarApp.DataAccessLayer.Concrete;
+﻿using KisiselYapilacaklarApp.BusinessLayer.Concrete;
+using KisiselYapilacaklarApp.DataAccessLayer.Concrete;
+using KisiselYapilacaklarApp.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +22,42 @@ namespace KisiselYapilacaklarApp.Screens
 
         NoteDal noteDal = new NoteDal();
 
+        ToDoListTodayManager toDoListTodayManager = new ToDoListTodayManager();
+        ToDoListWeekManager toDoListWeekManager = new ToDoListWeekManager();
+        ToDoListMonthManager toDoListMonthManager = new ToDoListMonthManager();
+
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            ShowToDoListToday();
+            ShowToDoListWeek();
+            ShowToDoListMonth();
+        }
 
+        public void ShowToDoListToday()
+        {
+            List<ToDoListToday> todos = toDoListTodayManager.GetAll();
+            for (int i = 0; i < todos.Count; i++)
+            {
+                listBox1.Items.Add((i+1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
+            }
+        }
+
+        public void ShowToDoListWeek()
+        {
+            List<ToDoListWeek> todos = toDoListWeekManager.GetAll();
+            for (int i = 0; i < todos.Count; i++)
+            {
+                listBox2.Items.Add((i + 1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
+            }
+        }
+
+        public void ShowToDoListMonth()
+        {
+            List<ToDoListMonth> todos = toDoListMonthManager.GetAll();
+            for (int i = 0; i < todos.Count; i++)
+            {
+                listBox3.Items.Add((i + 1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
+            }
         }
 
 
@@ -54,7 +89,9 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripYapilacakAylikEkle_Click(object sender, EventArgs e)
         {
-
+            string toDoType = "Aylik";
+            FrmToDoAdd frmToDoAdd = new FrmToDoAdd(toDoType);
+            frmToDoAdd.Show();
         }
 
         private void stripYapilacakAylikListele_Click(object sender, EventArgs e)
@@ -73,7 +110,9 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripYapilacakHaftalikEkle_Click(object sender, EventArgs e)
         {
-
+            string toDoType = "Haftalik";
+            FrmToDoAdd frmToDoAdd = new FrmToDoAdd(toDoType);
+            frmToDoAdd.Show();
         }
 
         private void stripYapilacakHaftalikListele_Click(object sender, EventArgs e)
@@ -92,24 +131,27 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripYapilacakGunlukEkle_Click(object sender, EventArgs e)
         {
-
+            string toDoType = "Gunluk";
+            FrmToDoAdd frmToDoAdd = new FrmToDoAdd(toDoType);
+            frmToDoAdd.Show();
         }
 
         private void stripYapilacakGunlukListele_Click(object sender, EventArgs e)
         {
-            FrmToDoToday frmToDoToday = new FrmToDoToday();
+            FrmToDoToday frmToDoToday = new FrmToDoToday("Ozel");
             frmToDoToday.Show();
             this.Hide();
         }
 
         private void stripYapilacakGunlukHepsiniListele_Click(object sender, EventArgs e)
         {
-            FrmToDoToday frmToDoToday = new FrmToDoToday();
+            FrmToDoToday frmToDoToday = new FrmToDoToday("Hepsi");
             frmToDoToday.Show();
             this.Hide();
         }
         /* ---------------------------- */
         /* MENU STRIP BUTTON CLICK CODE */
+
 
 
 

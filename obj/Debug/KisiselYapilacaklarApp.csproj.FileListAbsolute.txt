@@ -17,9 +17,9 @@ D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.xml
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\bin\Debug\System.Data.SQLite.dll.config
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csproj.CopyComplete
-D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csprojAssemblyReference.cache
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmNote.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoMonth.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoToday.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoWeek.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmNoteAdd.resources
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoAdd.resources

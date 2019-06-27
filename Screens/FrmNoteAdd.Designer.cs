@@ -59,10 +59,10 @@
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(12, 12);
+            this.panel4.Location = new System.Drawing.Point(12, 11);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(352, 456);
-            this.panel4.TabIndex = 4;
+            this.panel4.TabIndex = 6;
             // 
             // txtCreatedDate
             // 
@@ -121,7 +121,6 @@
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Yeni Not Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // cmbStatus
             // 
