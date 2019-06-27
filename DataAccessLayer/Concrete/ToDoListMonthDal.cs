@@ -80,6 +80,39 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
             connection.Connection().Close();
         }
 
+        public void UpdateOnlyMainSections(int Id, ToDoListMonth toDoListMonth)
+        {
+            string query = "Update ToDoListMonth set Title=@p1, Completed=@p2 where Id=@p3";
+            SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+            command.Parameters.AddWithValue("@p1", toDoListMonth.Title);
+            command.Parameters.AddWithValue("@p2", toDoListMonth.Completed);
+            command.Parameters.AddWithValue("@p3", Id);
+            command.ExecuteNonQuery();
+            connection.Connection().Close();
+        }
+
+        public void UpdateCompletedStatus(int Id, string completedStatus)
+        {
+            if (completedStatus == "Tamamlandı")
+            {
+                string query = "Update ToDoListMonth set Completed=@p1 where Id=@p2";
+                SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+                command.Parameters.AddWithValue("@p1", "Tamamlanmadı");
+                command.Parameters.AddWithValue("@p2", Id);
+                command.ExecuteNonQuery();
+                connection.Connection().Close();
+            }
+            else
+            {
+                string query = "Update ToDoListMonth set Completed=@p1 where Id=@p2";
+                SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
+                command.Parameters.AddWithValue("@p1", "Tamamlandı");
+                command.Parameters.AddWithValue("@p2", Id);
+                command.ExecuteNonQuery();
+                connection.Connection().Close();
+            }
+        }
+
         public void Delete(int Id)
         {
             string query = "Delete From ToDoListMonth Where Id=@p1";

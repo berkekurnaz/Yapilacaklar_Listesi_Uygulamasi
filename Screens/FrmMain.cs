@@ -96,14 +96,14 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripYapilacakAylikListele_Click(object sender, EventArgs e)
         {
-            FrmToDoMonth frmToDoMonth = new FrmToDoMonth();
+            FrmToDoMonth frmToDoMonth = new FrmToDoMonth("Ozel");
             frmToDoMonth.Show();
             this.Hide();
         }
 
         private void stripYapilacakAylikHepsiniListele_Click(object sender, EventArgs e)
         {
-            FrmToDoMonth frmToDoMonth = new FrmToDoMonth();
+            FrmToDoMonth frmToDoMonth = new FrmToDoMonth("Hepsi");
             frmToDoMonth.Show();
             this.Hide();
         }
