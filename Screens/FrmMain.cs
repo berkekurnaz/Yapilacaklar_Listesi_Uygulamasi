@@ -117,14 +117,14 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripYapilacakHaftalikListele_Click(object sender, EventArgs e)
         {
-            FrmToDoWeek frmToDoWeek = new FrmToDoWeek();
+            FrmToDoWeek frmToDoWeek = new FrmToDoWeek("Ozel");
             frmToDoWeek.Show();
             this.Hide();
         }
 
         private void stripYapilacakHaftalikHepsiniListele_Click(object sender, EventArgs e)
         {
-            FrmToDoWeek frmToDoWeek = new FrmToDoWeek();
+            FrmToDoWeek frmToDoWeek = new FrmToDoWeek("Hepsi");
             frmToDoWeek.Show();
             this.Hide();
         }
