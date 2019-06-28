@@ -56,6 +56,6 @@ Versiyon Numarası | Tarih | Aktif Bug | Durum
 
 
 ## Uygulamadan Goruntuler
-![Resim-1](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img01.png)
-![Resim-2](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img02.png)
-![Resim-3](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img03.png)
+![Resim-1](https://i.hizliresim.com/1pkAg5.png) <br/>
+![Resim-2](https://i.hizliresim.com/vaLBJm.png) <br/>
+![Resim-3](https://i.hizliresim.com/r0VbJV.png) <br/>
