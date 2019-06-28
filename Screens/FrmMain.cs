@@ -1,4 +1,5 @@
 ﻿using KisiselYapilacaklarApp.BusinessLayer.Concrete;
+using KisiselYapilacaklarApp.BusinessLayer.Utilities;
 using KisiselYapilacaklarApp.DataAccessLayer.Concrete;
 using KisiselYapilacaklarApp.EntityLayer.Concrete;
 using System;
@@ -31,6 +32,8 @@ namespace KisiselYapilacaklarApp.Screens
             ShowToDoListToday();
             ShowToDoListWeek();
             ShowToDoListMonth();
+
+            ShowStatistics();
         }
 
         public void ShowToDoListToday()
@@ -40,6 +43,14 @@ namespace KisiselYapilacaklarApp.Screens
             {
                 listBox1.Items.Add((i+1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
             }
+        }
+
+        public void ShowStatistics()
+        {
+            lblTodayCount.Text = ToDoCountService.GetToDoCountByToday(toDoListTodayManager).ToString();
+            lblWeekCount.Text = ToDoCountService.GetToDoCountByWeek(toDoListWeekManager).ToString();
+            lblMonthCount.Text = ToDoCountService.GetToDoCountByMonth(toDoListMonthManager).ToString();
+            lblAllCount.Text = ToDoCountService.GetToDoCountAll(toDoListTodayManager, toDoListWeekManager, toDoListMonthManager).ToString();
         }
 
         public void ShowToDoListWeek()

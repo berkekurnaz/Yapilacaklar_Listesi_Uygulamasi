@@ -48,26 +48,26 @@
             this.stripAyarlar = new System.Windows.Forms.ToolStripMenuItem();
             this.stripCikisYap = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTodayCount = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblWeekCount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMonthCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblAllCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.listBox3 = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -235,21 +235,21 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblTodayCount);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 58);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 2;
             // 
-            // label2
+            // lblTodayCount
             // 
-            this.label2.Location = new System.Drawing.Point(3, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "0";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTodayCount.Location = new System.Drawing.Point(3, 58);
+            this.lblTodayCount.Name = "lblTodayCount";
+            this.lblTodayCount.Size = new System.Drawing.Size(192, 23);
+            this.lblTodayCount.TabIndex = 1;
+            this.lblTodayCount.Text = "0";
+            this.lblTodayCount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
@@ -263,21 +263,21 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblWeekCount);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(236, 58);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 100);
             this.panel2.TabIndex = 3;
             // 
-            // label3
+            // lblWeekCount
             // 
-            this.label3.Location = new System.Drawing.Point(3, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 23);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "0";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWeekCount.Location = new System.Drawing.Point(3, 58);
+            this.lblWeekCount.Name = "lblWeekCount";
+            this.lblWeekCount.Size = new System.Drawing.Size(192, 23);
+            this.lblWeekCount.TabIndex = 1;
+            this.lblWeekCount.Text = "0";
+            this.lblWeekCount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
             // 
@@ -291,21 +291,21 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lblMonthCount);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(460, 58);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 100);
             this.panel3.TabIndex = 3;
             // 
-            // label5
+            // lblMonthCount
             // 
-            this.label5.Location = new System.Drawing.Point(3, 58);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "0";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblMonthCount.Location = new System.Drawing.Point(3, 58);
+            this.lblMonthCount.Name = "lblMonthCount";
+            this.lblMonthCount.Size = new System.Drawing.Size(192, 23);
+            this.lblMonthCount.TabIndex = 1;
+            this.lblMonthCount.Text = "0";
+            this.lblMonthCount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
             // 
@@ -319,21 +319,21 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblAllCount);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Location = new System.Drawing.Point(684, 58);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 100);
             this.panel4.TabIndex = 4;
             // 
-            // label7
+            // lblAllCount
             // 
-            this.label7.Location = new System.Drawing.Point(3, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 23);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "0";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblAllCount.Location = new System.Drawing.Point(3, 58);
+            this.lblAllCount.Name = "lblAllCount";
+            this.lblAllCount.Size = new System.Drawing.Size(192, 23);
+            this.lblAllCount.TabIndex = 1;
+            this.lblAllCount.Text = "0";
+            this.lblAllCount.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label8
             // 
@@ -354,6 +354,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bugün Yapılacaklar";
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(7, 30);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(271, 292);
+            this.listBox1.TabIndex = 0;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listBox2);
@@ -364,6 +373,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bu Hafta Yapılacaklar";
             // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(7, 30);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(271, 292);
+            this.listBox2.TabIndex = 1;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.listBox3);
@@ -373,6 +391,15 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Bu Ay Yapılacaklar";
+            // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 16;
+            this.listBox3.Location = new System.Drawing.Point(9, 30);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.Size = new System.Drawing.Size(271, 292);
+            this.listBox3.TabIndex = 2;
             // 
             // panel5
             // 
@@ -401,33 +428,6 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Tarih";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(7, 30);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(271, 292);
-            this.listBox1.TabIndex = 0;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(7, 30);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(271, 292);
-            this.listBox2.TabIndex = 1;
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(9, 30);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(271, 292);
-            this.listBox3.TabIndex = 2;
             // 
             // FrmMain
             // 
@@ -482,16 +482,16 @@
         private System.Windows.Forms.ToolStripMenuItem stripAyarlar;
         private System.Windows.Forms.ToolStripMenuItem stripCikisYap;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTodayCount;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblWeekCount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMonthCount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAllCount;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;

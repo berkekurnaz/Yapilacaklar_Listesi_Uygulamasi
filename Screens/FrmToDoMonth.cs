@@ -43,7 +43,8 @@ namespace KisiselYapilacaklarApp.Screens
             if (toDoType == "Ozel")
             {
                 int currentMonth = DateTime.Now.Month;
-                dataGridView1.DataSource = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth).ToList();
+                int currentYear = DateTime.Now.Year;
+                dataGridView1.DataSource = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth && x.Year == currentYear).ToList();
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[3].Visible = false;
@@ -118,12 +119,12 @@ namespace KisiselYapilacaklarApp.Screens
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-                if (dataGridView1.Rows[i].Cells[4].Value.ToString() == "Tamamlandı")
+                if (dataGridView1.Rows[i].Cells[5].Value.ToString() == "Tamamlandı")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Green;
                     dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.White;
                 }
-                else if (dataGridView1.Rows[i].Cells[4].Value.ToString() == "Tamamlanmadı")
+                else if (dataGridView1.Rows[i].Cells[5].Value.ToString() == "Tamamlanmadı")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                     dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Black;

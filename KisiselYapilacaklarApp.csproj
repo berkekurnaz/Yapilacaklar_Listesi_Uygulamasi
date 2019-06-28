@@ -72,6 +72,7 @@
     <Compile Include="BusinessLayer\Concrete\ToDoListMonthManager.cs" />
     <Compile Include="BusinessLayer\Concrete\ToDoListTodayManager.cs" />
     <Compile Include="BusinessLayer\Concrete\ToDoListWeekManager.cs" />
+    <Compile Include="BusinessLayer\Utilities\ToDoCountService.cs" />
     <Compile Include="DataAccessLayer\Abstract\INoteDal.cs" />
     <Compile Include="DataAccessLayer\Abstract\IToDoListMonthDal.cs" />
     <Compile Include="DataAccessLayer\Abstract\IToDoListTodayDal.cs" />
@@ -175,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessLayer\Services\" />
-    <Folder Include="BusinessLayer\Utilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />

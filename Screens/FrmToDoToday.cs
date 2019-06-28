@@ -43,6 +43,8 @@ namespace KisiselYapilacaklarApp.Screens
             if (toDoType == "Ozel")
             {
                 int currentDay = DateTime.Now.Day;
+                int currentMonth = DateTime.Now.Month;
+                int currentYear = DateTime.Now.Year;
                 dataGridView1.DataSource = toDoListTodayManager.GetAll().Where(x => x.Day == currentDay).ToList();
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[2].Visible = false;
