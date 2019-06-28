@@ -66,7 +66,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -404,21 +404,21 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.lblDate);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(12, 513);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(284, 67);
             this.panel5.TabIndex = 3;
             // 
-            // label9
+            // lblDate
             // 
-            this.label9.Location = new System.Drawing.Point(3, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(280, 23);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "0";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDate.Location = new System.Drawing.Point(3, 35);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(280, 23);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "0";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -497,7 +497,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ToolStripMenuItem stripYapilacakGunlukHepsiniListele;
         private System.Windows.Forms.ToolStripMenuItem stripYapilacakHaftalikHepsiniListele;

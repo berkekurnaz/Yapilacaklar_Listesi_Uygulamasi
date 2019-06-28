@@ -52,4 +52,10 @@ kurnaz.berke1907@gmail.com
 Versiyon Numarası | Tarih | Aktif Bug | Durum
 --- | --- | --- | ---
 1.0.0 | 01 / 07 / 2019 | 2 | `aktif`
+
+
+
 ## Uygulamadan Goruntuler
+![Resim-1](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img01.png)
+![Resim-2](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img02.png)
+![Resim-3](https://github.com/berkekurnaz/Yapilacaklar_Listesi_Uygulamasi/tree/master/obj/Debug/img03.png)

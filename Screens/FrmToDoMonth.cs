@@ -46,7 +46,6 @@ namespace KisiselYapilacaklarApp.Screens
                 int currentYear = DateTime.Now.Year;
                 dataGridView1.DataSource = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth && x.Year == currentYear).ToList();
                 dataGridView1.Columns[0].Visible = false;
-                dataGridView1.Columns[2].Visible = false;
                 dataGridView1.Columns[3].Visible = false;
                 dataGridView1.Columns[4].Visible = false;
             }
@@ -63,6 +62,7 @@ namespace KisiselYapilacaklarApp.Screens
                 ToDoListMonth toDoListMonth = new ToDoListMonth();
                 toDoListMonth.Id = Convert.ToInt32(txtId.Text);
                 toDoListMonth.Title = txtTitle.Text;
+                toDoListMonth.Description = txtDescription.Text;
                 toDoListMonth.Completed = txtCompleted.Text;
 
                 toDoListMonthManager.UpdateOnlyMainSections(toDoListMonth.Id, toDoListMonth);
@@ -107,7 +107,8 @@ namespace KisiselYapilacaklarApp.Screens
             {
                 txtId.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtTitle.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtCompleted.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtDescription.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtCompleted.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             }
             catch
             {
@@ -127,7 +128,7 @@ namespace KisiselYapilacaklarApp.Screens
                 else if (dataGridView1.Rows[i].Cells[5].Value.ToString() == "Tamamlanmadı")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Black;
+                    dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.White;
                 }
             }
         }

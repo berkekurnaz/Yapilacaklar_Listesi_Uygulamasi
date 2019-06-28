@@ -129,7 +129,7 @@ namespace KisiselYapilacaklarApp.Screens
                 else if (dataGridView1.Rows[i].Cells[6].Value.ToString() == "Tamamlanmadı")
                 {
                     dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                    dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.Black;
+                    dataGridView1.Rows[i].DefaultCellStyle.ForeColor = Color.White;
                 }
             }
         }

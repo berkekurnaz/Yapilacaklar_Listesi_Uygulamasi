@@ -18,7 +18,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
         public List<Note> GetAll()
         {
             List<Note> notes = new List<Note>();
-            string query = "Select * From Note";
+            string query = "Select * From Note Order By Id Desc";
             SQLiteCommand command = new SQLiteCommand(query,connection.Connection());
             SQLiteDataReader dr = command.ExecuteReader();
             while(dr.Read())

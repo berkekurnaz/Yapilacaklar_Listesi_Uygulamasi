@@ -29,6 +29,10 @@ namespace KisiselYapilacaklarApp.Screens
         public void ShowAllData()
         {
             dataGridView1.DataSource = noteManager.GetAll();
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[3].Visible = false;
+            lblDate.Text = "Tarih : " + DateTime.Now.ToShortDateString();
         }
 
         public void ClearComponents()

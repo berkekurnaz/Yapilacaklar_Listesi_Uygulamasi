@@ -34,15 +34,7 @@ namespace KisiselYapilacaklarApp.Screens
             ShowToDoListMonth();
 
             ShowStatistics();
-        }
-
-        public void ShowToDoListToday()
-        {
-            List<ToDoListToday> todos = toDoListTodayManager.GetAll();
-            for (int i = 0; i < todos.Count; i++)
-            {
-                listBox1.Items.Add((i+1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
-            }
+            lblDate.Text = DateTime.Now.ToShortDateString();
         }
 
         public void ShowStatistics()
@@ -53,9 +45,23 @@ namespace KisiselYapilacaklarApp.Screens
             lblAllCount.Text = ToDoCountService.GetToDoCountAll(toDoListTodayManager, toDoListWeekManager, toDoListMonthManager).ToString();
         }
 
+        public void ShowToDoListToday()
+        {
+            int currentDay = DateTime.Now.Day;
+            int currentMonth = DateTime.Now.Month;
+            int currentYear = DateTime.Now.Year;
+            List<ToDoListToday> todos = toDoListTodayManager.GetAll().Where(x => x.Day == currentDay && x.Month == currentMonth && x.Year == currentYear).ToList();
+            for (int i = 0; i < todos.Count; i++)
+            {
+                listBox1.Items.Add((i + 1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
+            }
+        }
+
         public void ShowToDoListWeek()
         {
-            List<ToDoListWeek> todos = toDoListWeekManager.GetAll();
+            int currentWeek = DateTime.Now.DayOfYear / 7;
+            int currentYear = DateTime.Now.Year;
+            List<ToDoListWeek> todos = toDoListWeekManager.GetAll().Where(x => x.Week == currentWeek && x.Year == currentYear).ToList();
             for (int i = 0; i < todos.Count; i++)
             {
                 listBox2.Items.Add((i + 1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);
@@ -64,7 +70,9 @@ namespace KisiselYapilacaklarApp.Screens
 
         public void ShowToDoListMonth()
         {
-            List<ToDoListMonth> todos = toDoListMonthManager.GetAll();
+            int currentMonth = DateTime.Now.Month;
+            int currentYear = DateTime.Now.Year;
+            List<ToDoListMonth> todos = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth && x.Year == currentYear).ToList();
             for (int i = 0; i < todos.Count; i++)
             {
                 listBox3.Items.Add((i + 1).ToString() + " - " + todos[i].Title + " - " + todos[i].Completed);

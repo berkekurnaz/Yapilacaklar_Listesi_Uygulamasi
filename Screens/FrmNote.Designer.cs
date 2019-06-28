@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
@@ -36,20 +37,19 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.txtContent = new System.Windows.Forms.RichTextBox();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.lblId = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtCreatedDate = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.txtContent = new System.Windows.Forms.RichTextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -66,6 +66,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(881, 50);
             this.panel1.TabIndex = 0;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(5, 7);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(124, 35);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Yeni Not Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label1
             // 
@@ -120,6 +131,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(4, 3);
             this.dataGridView1.Name = "dataGridView1";
@@ -150,110 +162,24 @@
             this.panel4.Size = new System.Drawing.Size(352, 456);
             this.panel4.TabIndex = 3;
             // 
-            // label2
+            // txtCreatedDate
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(8, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Başlık :";
+            this.txtCreatedDate.Enabled = false;
+            this.txtCreatedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtCreatedDate.Location = new System.Drawing.Point(81, 272);
+            this.txtCreatedDate.Name = "txtCreatedDate";
+            this.txtCreatedDate.Size = new System.Drawing.Size(266, 26);
+            this.txtCreatedDate.TabIndex = 12;
             // 
-            // label3
+            // label6
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(14, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "İçerik :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(3, 315);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Durum :";
-            // 
-            // txtTitle
-            // 
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTitle.Location = new System.Drawing.Point(81, 47);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(266, 26);
-            this.txtTitle.TabIndex = 3;
-            // 
-            // txtContent
-            // 
-            this.txtContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtContent.Location = new System.Drawing.Point(81, 90);
-            this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(266, 162);
-            this.txtContent.TabIndex = 4;
-            this.txtContent.Text = "";
-            // 
-            // cmbStatus
-            // 
-            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cmbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "Düşük",
-            "Orta",
-            "Yüksek"});
-            this.cmbStatus.Location = new System.Drawing.Point(79, 312);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(266, 28);
-            this.cmbStatus.TabIndex = 5;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(20, 381);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(20);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(145, 57);
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Güncelle";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(189, 381);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(20);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(145, 57);
-            this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(5, 7);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(124, 35);
-            this.btnAdd.TabIndex = 8;
-            this.btnAdd.Text = "Yeni Not Ekle";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblId.Location = new System.Drawing.Point(77, 4);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(0, 20);
-            this.lblId.TabIndex = 8;
-            this.lblId.Visible = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(16, 275);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Tarih :";
             // 
             // txtId
             // 
@@ -274,24 +200,99 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Id :";
             // 
-            // txtCreatedDate
+            // lblId
             // 
-            this.txtCreatedDate.Enabled = false;
-            this.txtCreatedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCreatedDate.Location = new System.Drawing.Point(81, 272);
-            this.txtCreatedDate.Name = "txtCreatedDate";
-            this.txtCreatedDate.Size = new System.Drawing.Size(266, 26);
-            this.txtCreatedDate.TabIndex = 12;
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblId.Location = new System.Drawing.Point(77, 4);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 20);
+            this.lblId.TabIndex = 8;
+            this.lblId.Visible = false;
             // 
-            // label6
+            // btnDelete
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(16, 275);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Tarih :";
+            this.btnDelete.Location = new System.Drawing.Point(189, 381);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(20);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(145, 57);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(20, 381);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(20);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(145, 57);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cmbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Düşük",
+            "Orta",
+            "Yüksek"});
+            this.cmbStatus.Location = new System.Drawing.Point(79, 312);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(266, 28);
+            this.cmbStatus.TabIndex = 5;
+            // 
+            // txtContent
+            // 
+            this.txtContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtContent.Location = new System.Drawing.Point(81, 90);
+            this.txtContent.Name = "txtContent";
+            this.txtContent.Size = new System.Drawing.Size(266, 162);
+            this.txtContent.TabIndex = 4;
+            this.txtContent.Text = "";
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTitle.Location = new System.Drawing.Point(81, 47);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(266, 26);
+            this.txtTitle.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(3, 315);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Durum :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(14, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "İçerik :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(8, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Başlık :";
             // 
             // FrmNote
             // 

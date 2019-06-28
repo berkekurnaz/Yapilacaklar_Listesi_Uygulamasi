@@ -17,7 +17,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
         public List<ToDoListMonth> GetAll()
         {
             List<ToDoListMonth> todos = new List<ToDoListMonth>();
-            string query = "Select * From ToDoListMonth";
+            string query = "Select * From ToDoListMonth Order By Id Desc";
             SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
             SQLiteDataReader dr = command.ExecuteReader();
             while (dr.Read())
@@ -25,6 +25,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
                 ToDoListMonth todo = new ToDoListMonth();
                 todo.Id = Convert.ToInt16(dr["Id"]);
                 todo.Title = dr["Title"].ToString();
+                todo.Description = dr["Description"].ToString();
                 todo.Month = Convert.ToInt16(dr["Month"]);
                 todo.Year = Convert.ToInt16(dr["Year"]);
                 todo.Completed = dr["Completed"].ToString();
@@ -82,11 +83,12 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
 
         public void UpdateOnlyMainSections(int Id, ToDoListMonth toDoListMonth)
         {
-            string query = "Update ToDoListMonth set Title=@p1, Completed=@p2 where Id=@p3";
+            string query = "Update ToDoListMonth set Title=@p1, Description=@p2, Completed=@p3 where Id=@p4";
             SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
             command.Parameters.AddWithValue("@p1", toDoListMonth.Title);
-            command.Parameters.AddWithValue("@p2", toDoListMonth.Completed);
-            command.Parameters.AddWithValue("@p3", Id);
+            command.Parameters.AddWithValue("@p2", toDoListMonth.Description);
+            command.Parameters.AddWithValue("@p3", toDoListMonth.Completed);
+            command.Parameters.AddWithValue("@p4", Id);
             command.ExecuteNonQuery();
             connection.Connection().Close();
         }

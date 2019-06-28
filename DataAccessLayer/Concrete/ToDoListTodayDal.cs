@@ -17,7 +17,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
         public List<ToDoListToday> GetAll()
         {
             List<ToDoListToday> todos = new List<ToDoListToday>();
-            string query = "Select * From ToDoListToday";
+            string query = "Select * From ToDoListToday Order By Id Desc";
             SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
             SQLiteDataReader dr = command.ExecuteReader();
             while (dr.Read())

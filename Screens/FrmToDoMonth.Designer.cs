@@ -45,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -127,6 +129,8 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.txtDescription);
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.btnDelete);
             this.panel4.Controls.Add(this.btnComplete);
             this.panel4.Controls.Add(this.btnUpdate);
@@ -143,7 +147,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(107, 375);
+            this.btnDelete.Location = new System.Drawing.Point(107, 393);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(137, 44);
             this.btnDelete.TabIndex = 8;
@@ -153,7 +157,7 @@
             // 
             // btnComplete
             // 
-            this.btnComplete.Location = new System.Drawing.Point(193, 309);
+            this.btnComplete.Location = new System.Drawing.Point(193, 332);
             this.btnComplete.Name = "btnComplete";
             this.btnComplete.Size = new System.Drawing.Size(137, 44);
             this.btnComplete.TabIndex = 7;
@@ -163,7 +167,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(20, 309);
+            this.btnUpdate.Location = new System.Drawing.Point(20, 332);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(137, 44);
             this.btnUpdate.TabIndex = 6;
@@ -175,7 +179,7 @@
             // 
             this.txtCompleted.Enabled = false;
             this.txtCompleted.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtCompleted.Location = new System.Drawing.Point(20, 248);
+            this.txtCompleted.Location = new System.Drawing.Point(20, 276);
             this.txtCompleted.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
             this.txtCompleted.Name = "txtCompleted";
             this.txtCompleted.Size = new System.Drawing.Size(310, 28);
@@ -184,7 +188,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(20, 220);
+            this.label4.Location = new System.Drawing.Point(20, 248);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(310, 23);
             this.label4.TabIndex = 4;
@@ -194,7 +198,7 @@
             // txtTitle
             // 
             this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTitle.Location = new System.Drawing.Point(20, 158);
+            this.txtTitle.Location = new System.Drawing.Point(20, 124);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(310, 28);
@@ -203,7 +207,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(20, 130);
+            this.label3.Location = new System.Drawing.Point(20, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(310, 23);
             this.label3.TabIndex = 2;
@@ -214,7 +218,7 @@
             // 
             this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtId.Location = new System.Drawing.Point(20, 68);
+            this.txtId.Location = new System.Drawing.Point(20, 48);
             this.txtId.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(310, 28);
@@ -223,12 +227,31 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(20, 40);
+            this.label2.Location = new System.Drawing.Point(20, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(310, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Id";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(20, 172);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(310, 23);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Açıklama";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtDescription.Location = new System.Drawing.Point(20, 200);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(310, 28);
+            this.txtDescription.TabIndex = 10;
             // 
             // FrmToDoMonth
             // 
@@ -274,5 +297,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Label label5;
     }
 }

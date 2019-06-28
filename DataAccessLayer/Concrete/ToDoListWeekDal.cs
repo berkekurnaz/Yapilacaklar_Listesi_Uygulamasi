@@ -17,7 +17,7 @@ namespace KisiselYapilacaklarApp.DataAccessLayer.Concrete
         public List<ToDoListWeek> GetAll()
         {
             List<ToDoListWeek> todos = new List<ToDoListWeek>();
-            string query = "Select * From ToDoListWeek";
+            string query = "Select * From ToDoListWeek Order By Id Desc";
             SQLiteCommand command = new SQLiteCommand(query, connection.Connection());
             SQLiteDataReader dr = command.ExecuteReader();
             while (dr.Read())
