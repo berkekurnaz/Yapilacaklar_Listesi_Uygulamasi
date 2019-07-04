@@ -68,6 +68,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblDate = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblWordOfDay = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,6 +80,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -429,11 +433,40 @@
             this.label10.Text = "Tarih";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.lblWordOfDay);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(304, 513);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(580, 67);
+            this.panel6.TabIndex = 4;
+            // 
+            // lblWordOfDay
+            // 
+            this.lblWordOfDay.Location = new System.Drawing.Point(3, 35);
+            this.lblWordOfDay.Name = "lblWordOfDay";
+            this.lblWordOfDay.Size = new System.Drawing.Size(572, 23);
+            this.lblWordOfDay.TabIndex = 1;
+            this.lblWordOfDay.Text = "0";
+            this.lblWordOfDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(3, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(572, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Günün Sözü\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 592);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -462,6 +495,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,5 +543,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblWordOfDay;
+        private System.Windows.Forms.Label label3;
     }
 }

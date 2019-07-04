@@ -106,6 +106,12 @@
     <Compile Include="Screens\FrmNoteAdd.Designer.cs">
       <DependentUpon>FrmNoteAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\FrmToDoAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\FrmNoteAdd.resx">
       <DependentUpon>FrmNoteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\FrmToDoAdd.resx">
       <DependentUpon>FrmToDoAdd.cs</DependentUpon>

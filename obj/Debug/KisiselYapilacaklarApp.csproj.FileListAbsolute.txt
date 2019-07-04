@@ -23,3 +23,5 @@ D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoWeek.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmNoteAdd.resources
 D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmToDoAdd.resources
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.csprojAssemblyReference.cache
+D:\YazilimProjeleri2019\KisiselYapilacaklarApp\KisiselYapilacaklarApp\obj\Debug\KisiselYapilacaklarApp.Screens.FrmSettings.resources

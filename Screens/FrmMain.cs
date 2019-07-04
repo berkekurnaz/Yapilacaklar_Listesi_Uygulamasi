@@ -103,7 +103,9 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void stripAyarlar_Click(object sender, EventArgs e)
         {
-
+            FrmSettings frmSettings = new FrmSettings();
+            frmSettings.Show();
+            this.Hide();
         }
 
         private void stripNotEkle_Click(object sender, EventArgs e)
