@@ -1,4 +1,5 @@
 ﻿using KisiselYapilacaklarApp.BusinessLayer.Concrete;
+using KisiselYapilacaklarApp.BusinessLayer.Services;
 using KisiselYapilacaklarApp.BusinessLayer.Utilities;
 using KisiselYapilacaklarApp.DataAccessLayer.Concrete;
 using KisiselYapilacaklarApp.EntityLayer.Concrete;
@@ -35,6 +36,7 @@ namespace KisiselYapilacaklarApp.Screens
 
             ShowStatistics();
             lblDate.Text = DateTime.Now.ToShortDateString();
+            lblWordOfDay.Text = WordOfDayService.GetWord();
         }
 
         private void FrmMain_Activated(object sender, EventArgs e)
@@ -182,6 +184,11 @@ namespace KisiselYapilacaklarApp.Screens
             FrmToDoToday frmToDoToday = new FrmToDoToday("Hepsi");
             frmToDoToday.Show();
             this.Hide();
+        }
+
+        private void lblWordOfDay_Click(object sender, EventArgs e)
+        {
+            
         }
         /* ---------------------------- */
         /* MENU STRIP BUTTON CLICK CODE */

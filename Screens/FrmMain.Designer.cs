@@ -451,6 +451,7 @@
             this.lblWordOfDay.TabIndex = 1;
             this.lblWordOfDay.Text = "0";
             this.lblWordOfDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWordOfDay.Click += new System.EventHandler(this.lblWordOfDay_Click);
             // 
             // label3
             // 
