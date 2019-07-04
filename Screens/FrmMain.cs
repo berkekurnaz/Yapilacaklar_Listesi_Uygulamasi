@@ -37,6 +37,16 @@ namespace KisiselYapilacaklarApp.Screens
             lblDate.Text = DateTime.Now.ToShortDateString();
         }
 
+        private void FrmMain_Activated(object sender, EventArgs e)
+        {
+            ShowToDoListToday();
+            ShowToDoListWeek();
+            ShowToDoListMonth();
+
+            ShowStatistics();
+            lblDate.Text = DateTime.Now.ToShortDateString();
+        }
+
         public void ShowStatistics()
         {
             lblTodayCount.Text = ToDoCountService.GetToDoCountByToday(toDoListTodayManager).ToString();
@@ -47,6 +57,7 @@ namespace KisiselYapilacaklarApp.Screens
 
         public void ShowToDoListToday()
         {
+            listBox1.Items.Clear();
             int currentDay = DateTime.Now.Day;
             int currentMonth = DateTime.Now.Month;
             int currentYear = DateTime.Now.Year;
@@ -59,6 +70,7 @@ namespace KisiselYapilacaklarApp.Screens
 
         public void ShowToDoListWeek()
         {
+            listBox2.Items.Clear();
             int currentWeek = DateTime.Now.DayOfYear / 7;
             int currentYear = DateTime.Now.Year;
             List<ToDoListWeek> todos = toDoListWeekManager.GetAll().Where(x => x.Week == currentWeek && x.Year == currentYear).ToList();
@@ -70,6 +82,7 @@ namespace KisiselYapilacaklarApp.Screens
 
         public void ShowToDoListMonth()
         {
+            listBox3.Items.Clear();
             int currentMonth = DateTime.Now.Month;
             int currentYear = DateTime.Now.Year;
             List<ToDoListMonth> todos = toDoListMonthManager.GetAll().Where(x => x.Month == currentMonth && x.Year == currentYear).ToList();

@@ -29,6 +29,11 @@ namespace KisiselYapilacaklarApp.Screens
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
             if (txtTitle.Text.Length > 3)
             {
                 Note note = new Note();
@@ -39,11 +44,8 @@ namespace KisiselYapilacaklarApp.Screens
 
                 noteManager.Add(note);
                 MessageBox.Show("Not Başarıyla Eklendi");
-                FrmNote frmNote = new FrmNote();
-                frmNote.ShowAllData();
                 this.Hide();
             }
         }
-
     }
 }

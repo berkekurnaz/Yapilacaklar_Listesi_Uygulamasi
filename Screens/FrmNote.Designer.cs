@@ -307,6 +307,7 @@
             this.Name = "FrmNote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişisel Yapılacaklar Uygulaması";
+            this.Activated += new System.EventHandler(this.FrmNote_Activated);
             this.Load += new System.EventHandler(this.FrmNote_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

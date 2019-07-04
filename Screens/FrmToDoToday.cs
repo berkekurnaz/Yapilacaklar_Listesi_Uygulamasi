@@ -38,6 +38,12 @@ namespace KisiselYapilacaklarApp.Screens
             lblDate.Text = "Tarih : " + DateTime.Now.ToShortDateString();
         }
 
+        private void FrmToDoToday_Activated(object sender, EventArgs e)
+        {
+            ShowData();
+            lblDate.Text = "Tarih : " + DateTime.Now.ToShortDateString();
+        }
+
         void ShowData()
         {
             if (toDoType == "Ozel")
@@ -133,5 +139,6 @@ namespace KisiselYapilacaklarApp.Screens
                 }
             }
         }
+
     }
 }

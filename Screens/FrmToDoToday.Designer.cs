@@ -36,15 +36,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnComplete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtCompleted = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnComplete = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,44 +141,35 @@
             this.panel4.Size = new System.Drawing.Size(352, 456);
             this.panel4.TabIndex = 7;
             // 
-            // label2
+            // btnDelete
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(20, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(310, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Id";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Location = new System.Drawing.Point(107, 375);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(137, 44);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtId
+            // btnComplete
             // 
-            this.txtId.Enabled = false;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtId.Location = new System.Drawing.Point(20, 68);
-            this.txtId.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(310, 28);
-            this.txtId.TabIndex = 1;
+            this.btnComplete.Location = new System.Drawing.Point(193, 309);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(137, 44);
+            this.btnComplete.TabIndex = 7;
+            this.btnComplete.Text = "Durum Güncelle";
+            this.btnComplete.UseVisualStyleBackColor = true;
+            this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
             // 
-            // txtTitle
+            // btnUpdate
             // 
-            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTitle.Location = new System.Drawing.Point(20, 158);
-            this.txtTitle.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(310, 28);
-            this.txtTitle.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(20, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(310, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Yapılacak";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Location = new System.Drawing.Point(20, 309);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(137, 44);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // txtCompleted
             // 
@@ -200,35 +191,44 @@
             this.label4.Text = "Durum";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUpdate
+            // txtTitle
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(20, 309);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(137, 44);
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Güncelle";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTitle.Location = new System.Drawing.Point(20, 158);
+            this.txtTitle.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(310, 28);
+            this.txtTitle.TabIndex = 3;
             // 
-            // btnComplete
+            // label3
             // 
-            this.btnComplete.Location = new System.Drawing.Point(193, 309);
-            this.btnComplete.Name = "btnComplete";
-            this.btnComplete.Size = new System.Drawing.Size(137, 44);
-            this.btnComplete.TabIndex = 7;
-            this.btnComplete.Text = "Durum Güncelle";
-            this.btnComplete.UseVisualStyleBackColor = true;
-            this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(20, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(310, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Yapılacak";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnDelete
+            // txtId
             // 
-            this.btnDelete.Location = new System.Drawing.Point(107, 375);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(137, 44);
-            this.btnDelete.TabIndex = 8;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtId.Location = new System.Drawing.Point(20, 68);
+            this.txtId.Margin = new System.Windows.Forms.Padding(20, 5, 20, 20);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(310, 28);
+            this.txtId.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(20, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(310, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Id";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmToDoToday
             // 
@@ -243,6 +243,7 @@
             this.Name = "FrmToDoToday";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişisel Yapılacaklar Uygulaması";
+            this.Activated += new System.EventHandler(this.FrmToDoToday_Activated);
             this.Load += new System.EventHandler(this.FrmToDoToday_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

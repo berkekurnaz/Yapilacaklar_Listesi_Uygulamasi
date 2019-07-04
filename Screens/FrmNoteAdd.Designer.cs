@@ -34,25 +34,25 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.txtContent = new System.Windows.Forms.RichTextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.txtCreatedDate);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.txtId);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.lblId);
-            this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.cmbStatus);
             this.panel4.Controls.Add(this.txtContent);
             this.panel4.Controls.Add(this.txtTitle);
@@ -111,16 +111,6 @@
             this.lblId.Size = new System.Drawing.Size(0, 20);
             this.lblId.TabIndex = 8;
             this.lblId.Visible = false;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(20, 381);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(20);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(310, 56);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "Yeni Not Ekle";
-            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // cmbStatus
             // 
@@ -184,6 +174,17 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Başlık :";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(25, 380);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(25, 10, 25, 10);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(300, 51);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.Text = "Yeni Not Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
+            // 
             // FrmNoteAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -209,12 +210,12 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.RichTextBox txtContent;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

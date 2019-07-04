@@ -450,6 +450,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kişisel Yapılacaklar Uygulaması";
+            this.Activated += new System.EventHandler(this.FrmMain_Activated);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

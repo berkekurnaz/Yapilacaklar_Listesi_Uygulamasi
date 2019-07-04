@@ -26,6 +26,11 @@ namespace KisiselYapilacaklarApp.Screens
             ShowAllData();
         }
 
+        private void FrmNote_Activated(object sender, EventArgs e)
+        {
+            ShowAllData();
+        }
+
         public void ShowAllData()
         {
             dataGridView1.DataSource = noteManager.GetAll();
