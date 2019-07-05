@@ -3,14 +3,14 @@
 Gunluk, haftalik ve aylik olarak yapmak istedigimiz listeleri kontrol etmemizi saglayan Windows isletim sistemi bilgisayarlar icin gelistirilmis uygulamadir. <br/>
 C# programlama dili ile Visual Studio 2017 gelistirme ortaminda gelistirilmis olup katmanli bir mimaride gelistirilmistir.Veritabani olarak SQLite kullanilmistir. <br/>
 Acik kaynak kodlu olarak gelistirilmesi devam etmektedir.Gelistirme süreci ve versiyonlarla ilgilii detayli notlara asagidaki adres araciligiyla ulasabilirsiniz. <br/>
-[Gelistirme ve Versiyon Notlari](https://www.berkekurnaz.com) <br/>
+[Gelistirme ve Versiyon Notlari](http://app.berkekurnaz.com/kisiselappnot.html) <br/>
 
 
 
 ## Indirme
 Asagidaki linkler araciligiyla uygulamayi indirebilir ve bilgisayariniza kurabilirsiniz. <br/>
-[Windows 64 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com) <br/>
-[Windows 32 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com) <br/>
+[Windows 64 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com/todo64.rar) <br/>
+[Windows 32 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com/todo32.rar) <br/>
 
 
 
@@ -56,6 +56,6 @@ Versiyon Numarası | Tarih | Aktif Bug | Durum
 
 
 ## Uygulamadan Goruntuler
-![Resim-1](https://i.hizliresim.com/1pkAg5.png) <br/>
-![Resim-2](https://i.hizliresim.com/vaLBJm.png) <br/>
-![Resim-3](https://i.hizliresim.com/r0VbJV.png) <br/>
+![Resim-1](https://i.resimyukle.xyz/cCA4aM.png) <br/>
+![Resim-2](https://i.resimyukle.xyz/WCRbKd.png) <br/>
+![Resim-3](https://i.resimyukle.xyz/zxWMx8.png) <br/>
