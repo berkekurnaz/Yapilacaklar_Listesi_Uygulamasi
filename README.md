@@ -9,8 +9,8 @@ Acik kaynak kodlu olarak gelistirilmesi devam etmektedir.Gelistirme süreci ve v
 
 ## Indirme
 Asagidaki linkler araciligiyla uygulamayi indirebilir ve bilgisayariniza kurabilirsiniz. <br/>
-[Windows 64 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com/todo64.rar) <br/>
-[Windows 32 Bit Bilgisayarlar Icin](https://www.berkekurnaz.com/todo32.rar) <br/>
+[Windows 64 Bit Bilgisayarlar Icin](http://app.berkekurnaz.com/todo64.rar) <br/>
+[Windows 32 Bit Bilgisayarlar Icin](http://app.berkekurnaz.com/todo32.rar) <br/>
 
 
 
